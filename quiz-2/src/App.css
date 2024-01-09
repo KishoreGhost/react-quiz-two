@@ -1,0 +1,105 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body{
+  background-color: rgb(91, 75, 165);
+}
+
+#main-div{
+  border: 2px solid white;
+  width: 75rem;
+  height: 30rem;
+  background-color: #ffffff;
+}
+
+.question-no{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+#option-div{
+  margin: 0 7%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 30rem;
+  height: 2rem;
+  background-color: aqua;
+}
+
+#bottom-div{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 120px;
+}
+
+.button{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  width: 6rem;
+  font-weight: 700;
+}
+
+.previous{
+  background-color: blue;
+}
+
+.next{
+  background-color: green;
+}
+
+.quit{
+  background-color: red;
+}
